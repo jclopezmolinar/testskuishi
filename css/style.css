@@ -1712,7 +1712,7 @@ iframe{
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 760px) {
     header{
         width: 100%;
         padding: 30px 50px;

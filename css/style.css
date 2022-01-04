@@ -1560,7 +1560,7 @@ iframe{
     }
 }
 
-@media screen and (max-width: 757px) {
+/* @media screen and (max-width: 756px) {
     header{
         width: 100%;
         padding: 20px 50px;
@@ -1625,7 +1625,7 @@ iframe{
     #mapa2{
         left: 53%
     }
-}
+} */
 
 @media screen and (max-width: 768px) {
 

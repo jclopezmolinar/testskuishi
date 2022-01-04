@@ -1645,6 +1645,73 @@ iframe{
     }
 }
 
+@media screen and (max-width: 756px) {
+    header{
+        width: 100%;
+        padding: 20px 50px;
+    }
+
+    #navbar{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #navbar li{
+        margin-left: 37px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    #navbar li a{
+        font-size: 18px;
+    }
+
+
+    #logo {
+        padding-top: 0.5%;
+        height: 14vh;
+        left: 1%;
+    }
+
+    #contacto h2{
+        font-size: 100%;
+        top: 26%;
+        left: 33.3%;
+    }
+
+    #contacto h3{
+        font-size: 100%;
+        top: 30%;
+        left: 32.6%;
+    }
+    #contacto p{
+        font-size: 50%;
+        top: 33%;
+        left: 30%;
+    }
+
+    #contacto #local2{
+        font-size: 76%;
+        left: 61.3%
+    }
+    
+    #contacto #direccion2{
+        left: 53%;
+    }
+
+    iframe{
+        position: absolute;
+        height: 40%;
+        width: 20%;
+        top: 45%;
+        left: 30%;
+    }
+    
+    #mapa2{
+        left: 53%
+    }
+}
+
 @media screen and (max-width: 640px) {
     header{
         width: 100%;

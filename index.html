@@ -168,7 +168,7 @@
             }
         });
         
-        document.querySelector('body').addEventListener('touchmove', f);
+        document.querySelector('html').addEventListener('touchmove', f);
         function f(ev){
             let value = window.scrollY - 2000;
             if(screen.width == 414 && screen.height == 896){

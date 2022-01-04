@@ -116,7 +116,7 @@
     </section>
         
     <script>
-        let bola = document.getElementById('bola');
+                let bola = document.getElementById('bola');
         console.log("The screen width is " + screen.width);
         console.log("The screen height is " + screen.height);
         window.addEventListener('scroll', function(){
@@ -130,7 +130,13 @@
                 if(value > -2000 && value < -1300){
                     bola.style.marginLeft = value * 0.14 + 'px';
                 }
-            } 
+            }
+        },);
+
+        $(document.body).on('touchmove', onScroll); // for mobile
+        $(window).on('scroll', onScroll);  
+        function onScroll(){ 
+            let value = window.scrollY - 2000;
             if(screen.width == 1280  && screen.height == 800){
                 if(value > -2000 && value < -1300){
                     bola.style.marginLeft = value * 0.11 + 'px';
@@ -163,10 +169,10 @@
             }
             if(screen.width == 640  && screen.height == 360){
                 if(value > -2000 && value < -1700){
-                    bola.style.marginLeft = value * 0.1+ 'px';
+                    bola.style.marginLeft = value * 0.04+ 'px';
                 }
             }
-        });
+        }
 
         let sushi = document.getElementById('sushi');
         window.addEventListener('scroll', function(){

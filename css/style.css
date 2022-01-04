@@ -69,7 +69,7 @@ section{
     float: left;
     height: 100vh;
     position: relative;
-    background: url('../assets/background.png');
+    background: url('../assets//background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

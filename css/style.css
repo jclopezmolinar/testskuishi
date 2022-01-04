@@ -1,0 +1,2408 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-size: 100%;
+    font-family: sans-serif;
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#navbar li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#navbar li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#logo {
+    position: absolute;
+    top: 5%;
+    height: 90%;
+}
+
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+    background: url('../assets//background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* -- SECCION DE INICIO, 1080P --*/
+
+
+#bola0{
+    height: 55%;
+    width: 32%;
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    animation-name: cf3FadeInOut4;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+}
+
+#bola_bot{
+    height: 55%;
+    width:32%;
+    position: absolute;
+    top: 38%;
+    left: 18%;
+    animation-name: cf3FadeInOut3;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+}
+
+#bola_mid{
+    height: 57%;
+    width: 32%;
+    position: absolute;
+    top: 38%;
+    left: 18%;
+    animation-name: cf3FadeInOut2;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+}
+
+#bola_top{
+    height: 55%;
+    width: 30%;
+    position: absolute;
+    top: 38%;
+    left: 18.7%;
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+}
+
+@keyframes cf3FadeInOut {
+    0% {
+        opacity:1;
+    }
+    14% {
+    opacity:1;
+    }
+    28% {
+    opacity:0;
+    }
+    42% {
+        opacity:0;
+    }
+    57% {
+        opacity:0;
+    }
+    71% {
+    opacity:0;
+    }
+    85% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@keyframes cf3FadeInOut2 {
+    0% {
+        opacity:0;
+    }
+    14% {
+    opacity:0;
+    }
+    28% {
+    opacity:1;
+    }
+    42% {
+        opacity:1;
+    }
+    57% {
+        opacity:0;
+    }
+    71% {
+    opacity:0;
+    }
+    85% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@keyframes cf3FadeInOut3 {
+    0% {
+        opacity:0;
+    }
+    14% {
+    opacity:0;
+    }
+    28% {
+    opacity:0;
+    }
+    42% {
+        opacity:0;
+    }
+    57% {
+        opacity:1;
+    }
+    71% {
+    opacity:1;
+    }
+    85% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@keyframes cf3FadeInOut4 {
+    0% {
+        opacity:0;
+    }
+    14.28% {
+    opacity:0;
+    }
+    28.56% {
+    opacity:0;
+    }
+    42.84% {
+        opacity:0;
+    }
+    57.12% {
+        opacity:0;
+    }
+    71.4% {
+    opacity:0;
+    }
+    85.68% {
+        opacity:1;
+    }
+    100% {
+        opacity:1;
+    }   
+}
+
+#texto_inicio{
+    position: absolute;
+    top: 10.9%;
+    left: 57.9%;
+    height: 96%;
+    width: 47%;
+}
+
+#texto_inicio_mobile{
+    visibility: hidden;
+    height: 0%;
+    width: 0%
+}
+
+/* -- Seccion Nostros, 1080p --*/
+
+#bola{
+    height: 65%;
+    width: 40%;
+    margin-top: 17vh;
+    margin-left: -30vw;
+    position: absolute;
+}
+
+#texto_sobreNosotros{
+    height: 75%;
+    width: 40%;
+    position: absolute;
+    left: 31%;
+}
+
+#texto_sobreNosotros2{
+    height: 80%;
+    width: 43%;
+    position: absolute;
+    top: 20%;
+    left: 29%;
+}
+
+#sushi{
+    height: 85%;
+    width: 55%;
+    margin-left: 60vw;
+    top: 10%;
+    position: absolute;
+}
+
+/* -- Seccion Menu, 1080p --*/
+
+#texto_ordena{
+    height: 80%;
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 27%;
+}
+
+#darwin {
+    position: absolute;
+    height: 60%;
+    width: 30%;
+    top: 52%;
+    left: 3%;
+}
+
+#uber {
+    position: absolute;
+    height: 50%;
+    width: 25%;
+    top: 58%;
+    left: 29%;
+}
+
+#didi { 
+    position: absolute;
+    height: 50%;
+    width: 25%;
+    top: 58%;
+    left: 51.2%;
+}
+
+#rappi {
+    position: absolute;
+    height: 50%;
+    width: 25%;
+    top: 58%;
+    left: 74%;
+}
+
+#grid-uno img{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    height: 30%;
+    width: 20%;
+    position: absolute;
+    top: 17%;
+    left: 6%
+}
+
+#grid-dos img{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    height: 30%;
+    width: 20%;
+    position: absolute;
+    top: 17%;
+    left: 28%
+}
+
+#grid-tres img{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    height: 30%;
+    width: 20%;
+    position: absolute;
+    top: 17%;
+    left: 51%
+}
+
+#grid-cuatro img{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    height: 30%;
+    width: 20%;
+    position: absolute;
+    top: 17%;
+    left: 73%
+}
+
+#grid-uno .menuAnimationSushi{
+    height: 35%;
+    width: 25%;
+    top: 6%;
+    left: 3%;
+}
+
+#grid-dos .menuAnimationSushi{
+    height: 35%;
+    width: 25%;
+    top: 6%;
+    left: 28%;
+}
+
+#grid-tres .menuAnimationSushi{
+    height: 35%;
+    width: 25%;
+    top: 6%;
+    left: 51%;
+}
+
+#grid-cuatro .menuAnimationSushi{
+    height: 35%;
+    width: 25%;
+    top: 6%;
+    left: 73%;
+}
+
+#animada1{
+    animation-name: menuFadeOut1;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+#animada2{
+    animation-name: menuFadeOut2;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+#animada3{
+    animation-name: menuFadeOut3;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+#animada4{
+    animation-name: menuFadeOut4;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+#animada5{
+    animation-name: menuFadeOut5;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+#animada6{
+    animation-name: menuFadeOut6;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+#animada7{
+    animation-name: menuFadeOut7;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+#animada8{
+    animation-name: menuFadeOut8;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+#animada9{
+    animation-name: menuFadeOut9;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+#animada10{
+    animation-name: menuFadeOut10;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+#animada11{
+    animation-name: menuFadeOut11;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+@keyframes menuFadeOut1 {
+    0% {
+        opacity:1;
+    }
+    9% {
+        opacity:0;
+    }
+    18% {
+        opacity:0;
+    }
+    27% {
+        opacity:0;
+    }
+    36% {
+        opacity:0;
+    }
+    45% {
+        opacity:0;
+    }
+    54% {
+        opacity:0;
+    }
+    63% {
+        opacity:0;
+    }
+    72% {
+        opacity:0;
+    }
+    81% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes menuFadeOut2 {
+    0% {
+        opacity:0;
+    }
+    9% {
+        opacity:1;
+    }
+    18% {
+        opacity:0;
+    }
+    27% {
+        opacity:0;
+    }
+    36% {
+        opacity:0;
+    }
+    45% {
+        opacity:0;
+    }
+    54% {
+        opacity:0;
+    }
+    63% {
+        opacity:0;
+    }
+    72% {
+        opacity:0;
+    }
+    81% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes menuFadeOut3 {
+    0% {
+        opacity:0;
+    }
+    9% {
+        opacity:0;
+    }
+    18% {
+        opacity:1;
+    }
+    27% {
+        opacity:0;
+    }
+    36% {
+        opacity:0;
+    }
+    45% {
+        opacity:0;
+    }
+    54% {
+        opacity:0;
+    }
+    63% {
+        opacity:0;
+    }
+    72% {
+        opacity:0;
+    }
+    81% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes menuFadeOut4 {
+    0% {
+        opacity:0;
+    }
+    9% {
+        opacity:0;
+    }
+    18% {
+        opacity:0;
+    }
+    27% {
+        opacity:1;
+    }
+    36% {
+        opacity:0;
+    }
+    45% {
+        opacity:0;
+    }
+    54% {
+        opacity:0;
+    }
+    63% {
+        opacity:0;
+    }
+    72% {
+        opacity:0;
+    }
+    81% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes menuFadeOut5 {
+    0% {
+        opacity:0;
+    }
+    9% {
+        opacity:0;
+    }
+    18% {
+        opacity:0;
+    }
+    27% {
+        opacity:0;
+    }
+    36% {
+        opacity:1;
+    }
+    45% {
+        opacity:0;
+    }
+    54% {
+        opacity:0;
+    }
+    63% {
+        opacity:0;
+    }
+    72% {
+        opacity:0;
+    }
+    81% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes menuFadeOut6 {
+    0% {
+        opacity:0;
+    }
+    9% {
+        opacity:0;
+    }
+    18% {
+        opacity:0;
+    }
+    27% {
+        opacity:0;
+    }
+    36% {
+        opacity:0;
+    }
+    45% {
+        opacity:1;
+    }
+    54% {
+        opacity:0;
+    }
+    63% {
+        opacity:0;
+    }
+    72% {
+        opacity:0;
+    }
+    81% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes menuFadeOut7 {
+    0% {
+        opacity:0;
+    }
+    9% {
+        opacity:0;
+    }
+    18% {
+        opacity:0;
+    }
+    27% {
+        opacity:0;
+    }
+    36% {
+        opacity:0;
+    }
+    45% {
+        opacity:0;
+    }
+    54% {
+        opacity:1;
+    }
+    63% {
+        opacity:0;
+    }
+    72% {
+        opacity:0;
+    }
+    81% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes menuFadeOut8 {
+    0% {
+        opacity:0;
+    }
+    9% {
+        opacity:0;
+    }
+    18% {
+        opacity:0;
+    }
+    27% {
+        opacity:0;
+    }
+    36% {
+        opacity:0;
+    }
+    45% {
+        opacity:0;
+    }
+    54% {
+        opacity:0;
+    }
+    63% {
+        opacity:1;
+    }
+    72% {
+        opacity:0;
+    }
+    81% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes menuFadeOut9 {
+    0% {
+        opacity:0;
+    }
+    9% {
+        opacity:0;
+    }
+    18% {
+        opacity:0;
+    }
+    27% {
+        opacity:0;
+    }
+    36% {
+        opacity:0;
+    }
+    45% {
+        opacity:0;
+    }
+    54% {
+        opacity:0;
+    }
+    63% {
+        opacity:0;
+    }
+    72% {
+        opacity:1;
+    }
+    81% {
+        opacity:0;
+    }
+    90% {
+        opacity:0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes menuFadeOut10 {
+    0% {
+        opacity:0;
+    }
+    9% {
+        opacity:0;
+    }
+    18% {
+        opacity:0;
+    }
+    27% {
+        opacity:0;
+    }
+    36% {
+        opacity:0;
+    }
+    45% {
+        opacity:0;
+    }
+    54% {
+        opacity:0;
+    }
+    63% {
+        opacity:0;
+    }
+    72% {
+        opacity:0;
+    }
+    81% {
+        opacity:1;
+    }
+    90% {
+        opacity:0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes menuFadeOut11 {
+    0% {
+        opacity:0;
+    }
+    9% {
+        opacity:0;
+    }
+    18% {
+        opacity:0;
+    }
+    27% {
+        opacity:0;
+    }
+    36% {
+        opacity:0;
+    }
+    45% {
+        opacity:0;
+    }
+    54% {
+        opacity:0;
+    }
+    63% {
+        opacity:0;
+    }
+    72% {
+        opacity:0;
+    }
+    81% {
+        opacity:0;
+    }
+    90% {
+        opacity:1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* -- Seccion Contacto, 1080p --*/
+
+
+#contacto h2{
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+#contacto h3{
+    color: #fff;
+    position: absolute;
+    top: 33%;
+    left: 32.6%;
+    transform: translate(-50%, -50%);
+}
+
+#contacto p{
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 36%;
+    left: 31.5%;
+}
+
+#contacto #sucursales {
+    left: 50%
+}
+
+#contacto #local2{
+    left: 57.4%
+}
+
+#contacto #direccion2{
+    left: 53%;
+}
+
+iframe{
+    position: absolute;
+    height: 40%;
+    width: 15%;
+    top: 48%;
+    left: 31.5%;
+}
+
+#mapa2{
+    left: 53%
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 115px;
+    height: 115px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+  }
+
+.fa-facebook {
+    position: absolute;
+    top: 30.2%;
+    left: 9.7%;
+    color: transparent;
+    z-index: 9999;
+  }
+  
+  .fa-instagram {
+    position: absolute;
+    top: 30.2%;
+    left: 16.5%;
+    color: transparent;
+    z-index: 9999;
+  }
+
+  #redes_sociales{
+    position: absolute;
+    height: 57%;
+    width: 28%;
+    top: 2%;
+    left: 70%
+}
+
+#sucursal_reliz{
+    position: absolute;
+    height: 40%;
+    width: 20%;
+    top: 11%;
+    left: 29%;
+}
+
+#sucursal_josema{
+    position: absolute;
+    height: 40%;
+    width: 20%;
+    top: 11%;
+    left: 50.5%;
+}
+
+#contacto #logo{
+    position: absolute;
+    height: 25%;
+    width: 15%;
+    top: 66%;
+    left: 80%;
+}
+
+#contacto_menu{
+    position: absolute;
+    height: 57%;
+    width: 28%;
+    top: -0.5%;
+    left: 1%;
+}
+
+#contacto_menu_boton{
+    visibility: hidden;
+    height: 0%;
+    width: 0%;
+}
+
+#menu_imagen{
+    position: absolute;
+    height: 57%;
+    width: 28%;
+    top: 11%;
+    left: 1%;
+}
+
+@media screen and (max-width: 1280px) {
+    #contacto h3{
+        top: 33%;
+        left: 33%;
+    }
+    #contacto p{
+        font-size: 90%;
+        top: 36%;
+        left: 31.4%;
+    }
+    
+    #contacto #local2{
+        left: 59.5%
+    }
+    
+    #contacto #direccion2{
+        left: 52.8%;
+    }
+
+    iframe{
+        width: 18%;
+    }
+
+    .fa-facebook {
+        top: 28.5%;
+        left: 9.3%;
+        height: 11.5%;
+        width: 5.8%;
+      }
+      
+     .fa-instagram {
+        top: 28.5%;
+        left: 15.8%;
+        height: 11.5%;
+        width: 5.8%;
+      }
+}
+
+@media screen and (max-width: 896px) {
+    header{
+        width: 100%;
+        padding: 20px 50px;
+    }
+
+    #navbar{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #navbar li{
+        margin-left: 75px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    #navbar li a{
+        font-size: 25px;
+    }
+
+    #logo {
+        height: 15vh;
+        left: 1%;
+    }
+
+    #contacto h3{
+        font-size: 100%;
+        top: 33%;
+        left: 33.4%;
+    }
+    #contacto p{
+        font-size: 60%;
+        top: 36%;
+        left: 31.4%;
+    }
+    
+    #contacto #local2{
+        left: 61%
+    }
+    
+    #contacto #direccion2{
+        left: 53%;
+    }
+
+    iframe{
+        width: 18%;
+    }
+
+    .fa-facebook {
+        position: absolute;
+        top: 28.4%;
+        left: 9.3%;
+        height: 12%;
+        width: 6%;
+      }
+      
+     .fa-instagram {
+        position: absolute;
+        top: 28.4%;
+        left: 15.7%;
+        height: 12%;
+        width: 6%;
+      }
+
+}
+
+@media screen and (max-width: 1024px) {
+    #contacto h3{
+        font-size: 130%;
+        top: 36%;
+        left: 33.5%;
+    }
+    #contacto p{
+        font-size: 77%;
+        top: 39%;
+        left: 31.4%;
+    }
+
+    #contacto #sucursales {
+        font-size: 100%;
+        top: 28%;
+        left: 48%
+    }
+    
+    #contacto #local2{
+        left: 62%
+    }
+    
+    #contacto #direccion2{
+        left: 53%;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    header{
+        width: 100%;
+        padding: 60px 50px;
+    }
+
+    body.show > *:not(.barra){
+        filter: blur(3px);
+    }
+
+    #navbar{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #navbar.show{
+        display: flex;
+        padding-top: 20%;
+    }
+
+    #navbar li{
+        padding: 5%;
+        padding-left: 0%;
+        text-align: center;
+    }
+
+    #navbar li a{
+        font-size: 50px;
+        
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        left: 85%;
+        top: 35%
+    }
+
+    #hamburger.show{
+        top: 5%
+    }
+
+    #logo {
+        padding-top: 1%;
+        height: 8vh;
+        left: 1%;
+    }
+
+    #logo.show {
+        height: 8vh;
+        left: 1%;
+        top: 1%
+    }
+
+    /* -- SECCION DE INICIO, MOBILE --*/
+
+    #bola0{
+        height: 35%;
+        width: 45%;
+        position: absolute;
+        top: 17%;
+        left: 30%;
+    }
+    
+    #bola_bot{
+        height: 35%;
+        width: 45%;
+        position: absolute;
+        top: 17%;
+        left: 30%;
+    }
+    
+    #bola_mid{
+        height: 35%;
+        width: 47%;
+        position: absolute;
+        top: 17%;
+        left: 30%;
+    }
+    
+    #bola_top{
+        height: 35%;
+        width: 45%;
+        position: absolute;
+        top: 17%;
+        left: 30%;
+    }
+
+    #texto_inicio{
+        visibility: hidden;
+    }
+    
+    #texto_inicio_mobile{
+        visibility: visible;
+        position: absolute;
+        height: 60%;
+        width: 120%;
+        top: 39.5%;
+        left: -10%;
+    }
+
+    /* -- SECCION DE NOSOTROS, MOBILE --*/
+
+    #bola{
+        margin-top: 0vh;
+        height: 30%;
+        width: 70%;
+        top: 15%;
+        left: 15%;
+    }
+
+    #texto_sobreNosotros{
+        height: 65%;
+        width: 90%;
+        position: absolute;
+        top: 25%;
+        left: 7%;
+    }
+
+    #texto_sobreNosotros2{
+        height: 65%;
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        left: 1%;
+    }
+
+    #sushi{
+        height: 40%;
+        width: 100%;
+        top: 15%;
+        left: -110%;
+        transform: rotate(340deg);
+    }
+
+    /* -- SECCION DE MENU, MOBILE --*/
+
+    #grid-uno img{
+        height: 15%;
+        width: 35%;
+        top: 15%;
+        left: 11%
+    }
+    
+    #grid-dos img{
+        height: 15%;
+        width: 35%;
+        top: 15%;
+        left: 60%
+    }
+    
+    #grid-tres img{
+        height: 15%;
+        width: 35%;
+        top: 33%;
+        left: 11%
+    }
+    
+    #grid-cuatro img{
+        height: 15%;
+        width: 35%;
+        top: 33%;
+        left: 60%
+    }
+    
+    #grid-uno .menuAnimationSushi{
+        height: 20%;
+        width: 45%;
+        top: 7%;
+        left: 9%;
+    }
+    
+    #grid-dos .menuAnimationSushi{
+        height: 20%;
+        width: 45%;
+        top: 7%;
+        left: 50%;
+    }
+    
+    #grid-tres .menuAnimationSushi{
+        height: 20%;
+        width: 45%;
+        top: 25%;
+        left: 9%;
+    }
+    
+    #grid-cuatro .menuAnimationSushi{
+        height: 20%;
+        width: 45%;
+        top: 25%;
+        left: 52%;
+    }
+ 
+    #texto_ordena{
+        position: absolute;
+        height: 60%;
+        width: 100%;
+        top: 25%;
+        left: 1%;
+    }
+ 
+    #darwin {
+        position: absolute;
+        height: 25%;
+        width: 50%;
+        top: 60%;
+        left: 8%;
+    }
+ 
+     #uber {
+         position: absolute;
+         height: 15%;
+         width: 30%;
+         top: 65%;
+         left: 58%;
+ }
+ 
+     #didi {
+         position: absolute;
+         height: 20%;
+         width: 40%;
+         top: 77%;
+         left: 10%;
+     }
+ 
+     #rappi {
+         position: absolute;
+         height: 15%;
+         width: 30%;
+         top: 80%;
+         left: 58%;
+     }
+
+
+    /* -- SECCION DE CONTACTO, MOBILE --*/
+    #contacto h3{
+        font-size: 160%;
+        top: 33%;
+        left: 9.4%;
+    }
+    #contacto p{
+        font-size: 121%;
+        top: 36%;
+        left: 6%;
+    }
+
+    #contacto #sucursales {
+        font-size: 200%;
+        top: 28%;
+        left: 48%
+    }
+    
+    #contacto #local2{
+        left: 67%
+    }
+    
+    #contacto #direccion2{
+        left: 53%;
+    }
+    
+    iframe{
+        position: absolute;
+        height: 25%;
+        width: 40%;
+        top: 45%;
+        left: 6%;
+    }
+    
+    #mapa2{
+        left: 53%
+    }
+    
+    .fa {
+        padding: 15px;
+        font-size: 30px;
+        width: 115px;
+        height: 115px;
+        text-align: center;
+        text-decoration: none;
+      }
+    
+    .fa:hover {
+        opacity: 0.7;
+      }
+    
+    .fa-facebook {
+        position: absolute;
+        top: 18.2%;
+        left: 16.6%;
+        height: 6%;
+        width: 10%;
+      }
+      
+     .fa-instagram {
+        position: absolute;
+        top: 18.2%;
+        left: 28.3%;
+        height: 6%;
+        width: 10%;
+        
+      }
+
+    iframe{
+        position: absolute;
+        height: 15%;
+        width: 40%;
+        top: 71%;
+        left: 8%;
+    }
+    
+    #mapa2{
+        top: 71%;
+        left: 53%;
+    }
+
+    #redes_sociales{
+        position: absolute;
+        height: 25%;
+        width: 45%;
+        top: 41%;
+        left: 28%
+    }
+
+    #sucursal_reliz{
+        position: absolute;
+        height: 20%;
+        width: 40%;
+        top: 53%;
+        left: 8%;
+    }
+    
+    #sucursal_josema{
+        position: absolute;
+        height: 20%;
+        width: 40%;
+        top: 53%;
+        left: 53%;
+    }
+    
+    #contacto #logo{
+        position: absolute;
+        height: 10%;
+        width: 25%;
+        top: 87%;
+        left: 38%;
+    }
+    
+    #contacto_menu{
+        visibility: hidden;
+    }
+
+    #contacto_menu_boton{
+        visibility: visible;
+        position: absolute;
+        height: 25%;
+        width: 45%;
+        top: 31.5%;
+        left: 28%;
+    }
+
+    #menu_imagen{
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        top: -3%;
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body.show > *:not(.barra){
+        filter: blur(3px);
+    }
+
+    .hamburger{
+        top: 30%
+    }
+
+    #bola{
+        margin-top: 0vh;
+        height: 35%;
+        width: 70%;
+        top: 12%;
+        left: 15%;
+    }
+
+    iframe{
+        position: absolute;
+        height: 15%;
+        width: 40%;
+        top: 71%;
+        left: 8%;
+    }
+    
+    #mapa2{
+        top: 71%;
+        left: 53%;
+    }
+
+    #redes_sociales{
+        position: absolute;
+        height: 25%;
+        width: 35%;
+        top: 41%;
+        left: 32%
+    }
+
+    #sucursal_reliz{
+        position: absolute;
+        height: 20%;
+        width: 35%;
+        top: 53%;
+        left: 11%;
+    }
+    
+    #sucursal_josema{
+        position: absolute;
+        height: 20%;
+        width: 35%;
+        top: 53%;
+        left: 57%;
+    }
+    
+    #contacto #logo{
+        position: absolute;
+        height: 10%;
+        width: 20%;
+        top: 87%;
+        left: 41%;
+    }
+    
+    #contacto_menu{
+        visibility: hidden;
+    }
+
+    #contacto_menu_boton{
+        visibility: visible;
+        position: absolute;
+        height: 25%;
+        width: 35%;
+        top: 31.5%;
+        left: 32%;
+    }
+
+    #menu_imagen{
+        position: absolute;
+        height: 50%;
+        width: 80%;
+        top: -3%;
+        left: 8%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header{
+        width: 100%;
+        padding: 30px 50px;
+    }
+
+    #navbar{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #navbar li{
+        margin-left: 75px;
+        margin-bottom: 0px;
+        margin-top: -5%;
+    }
+
+    #navbar li a{
+        font-size: 25px;
+    }
+
+    #logo {
+        position: absolute;
+        top: 5%;
+        height: 70%;
+    }
+
+    #logo.show {
+        top: 0.7%;
+        height: 10.7%;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        left: 82%;
+        top: 10%
+    }
+
+    #hamburger.show{
+        top: 1.5%
+    }
+     
+    
+    #bola0{
+        height: 55%;
+        width: 32%;
+        position: absolute;
+        top: 40%;
+        left: 18%;
+        animation-name: cf3FadeInOut4;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 6.5s;
+        animation-direction: alternate;
+    }
+    
+    #bola_bot{
+        height: 55%;
+        width:32%;
+        position: absolute;
+        top: 38%;
+        left: 18%;
+        animation-name: cf3FadeInOut3;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 6.5s;
+        animation-direction: alternate;
+    }
+    
+    #bola_mid{
+        height: 57%;
+        width: 32%;
+        position: absolute;
+        top: 38%;
+        left: 18%;
+        animation-name: cf3FadeInOut2;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 6.5s;
+        animation-direction: alternate;
+    }
+    
+    #bola_top{
+        height: 55%;
+        width: 30%;
+        position: absolute;
+        top: 38%;
+        left: 18.7%;
+        animation-name: cf3FadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 6.5s;
+        animation-direction: alternate;
+    }
+
+    #texto_inicio{
+        visibility: visible;
+        position: absolute;
+        top: 10.9%;
+        left: 57.9%;
+        height: 96%;
+        width: 47%;
+    }
+
+    #texto_inicio_mobile{
+        visibility: hidden;
+    }
+
+    #bola{
+        height: 65%;
+        width: 40%;
+        top: 20%;
+        position: absolute;
+    }
+    
+    #texto_sobreNosotros{
+        height: 75%;
+        width: 40%;
+        position: absolute;
+        top: 4%;
+        left: 31%;
+    }
+    
+    #texto_sobreNosotros2{
+        height: 80%;
+        width: 43%;
+        position: absolute;
+        top: 23%;
+        left: 29%;
+    }
+    
+    #sushi{
+        height: 85%;
+        width: 55%;
+        margin-left: 60vw;
+        top: 10%;
+        position: absolute;
+    }
+
+    #texto_ordena{
+        height: 80%;
+        width: 50%;
+        position: absolute;
+        top: 20%;
+        left: 27%;
+    }
+    
+    #darwin {
+        position: absolute;
+        height: 60%;
+        width: 30%;
+        top: 52%;
+        left: 3%;
+    }
+    
+    #uber {
+        position: absolute;
+        height: 50%;
+        width: 25%;
+        top: 58%;
+        left: 29%;
+    }
+    
+    #didi { 
+        position: absolute;
+        height: 50%;
+        width: 25%;
+        top: 58%;
+        left: 51.2%;
+    }
+    
+    #rappi {
+        position: absolute;
+        height: 50%;
+        width: 25%;
+        top: 58%;
+        left: 74%;
+    }
+    
+    #grid-uno img{
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        height: 30%;
+        width: 20%;
+        position: absolute;
+        top: 17%;
+        left: 6%
+    }
+    
+    #grid-dos img{
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        height: 30%;
+        width: 20%;
+        position: absolute;
+        top: 17%;
+        left: 28%
+    }
+    
+    #grid-tres img{
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        height: 30%;
+        width: 20%;
+        position: absolute;
+        top: 17%;
+        left: 51%
+    }
+    
+    #grid-cuatro img{
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        height: 30%;
+        width: 20%;
+        position: absolute;
+        top: 17%;
+        left: 73%
+    }
+    
+    #grid-uno .menuAnimationSushi{
+        height: 35%;
+        width: 25%;
+        top: 6%;
+        left: 3%;
+    }
+    
+    #grid-dos .menuAnimationSushi{
+        height: 35%;
+        width: 25%;
+        top: 6%;
+        left: 28%;
+    }
+    
+    #grid-tres .menuAnimationSushi{
+        height: 35%;
+        width: 25%;
+        top: 6%;
+        left: 51%;
+    }
+    
+    #grid-cuatro .menuAnimationSushi{
+        height: 35%;
+        width: 25%;
+        top: 6%;
+        left: 73%;
+    }
+
+    iframe{
+        position: absolute;
+        height: 40%;
+        width: 15%;
+        top: 48%;
+        left: 31.5%;
+    }
+    
+    #mapa2{
+        top: 48%;
+        left: 53%
+    }
+    
+    .fa {
+        padding: 15px;
+        font-size: 30px;
+        width: 115px;
+        height: 115px;
+        text-align: center;
+        text-decoration: none;
+      }
+    
+    .fa:hover {
+        opacity: 0.7;
+      }
+    
+    .fa-facebook {
+        position: absolute;
+        top: 30.2%;
+        left: 9.7%;
+        color: transparent;
+        z-index: 9999;
+      }
+      
+      .fa-instagram {
+        position: absolute;
+        top: 30.2%;
+        left: 16.5%;
+        color: transparent;
+        z-index: 9999;
+      }
+    
+      #redes_sociales{
+        position: absolute;
+        height: 57%;
+        width: 28%;
+        top: 2%;
+        left: 70%
+    }
+    
+    #sucursal_reliz{
+        position: absolute;
+        height: 40%;
+        width: 20%;
+        top: 11%;
+        left: 29%;
+    }
+    
+    #sucursal_josema{
+        position: absolute;
+        height: 40%;
+        width: 20%;
+        top: 11%;
+        left: 50.5%;
+    }
+    
+    #contacto #logo{
+        position: absolute;
+        height: 25%;
+        width: 15%;
+        top: 66%;
+        left: 80%;
+    }
+    
+    #contacto_menu{
+        visibility: visible;
+        position: absolute;
+        height: 57%;
+        width: 28%;
+        top: -0.5%;
+        left: 3%;
+    }
+    
+    #contacto_menu_boton{
+        visibility: hidden;
+        height: 0%;
+        width: 0%;
+    }
+    
+    #menu_imagen{
+        position: absolute;
+        height: 57%;
+        width: 28%;
+        top: 11%;
+        left: 1%;
+    }   
+}
+
+
+/* -------------------------------------------------- */
+
+@media screen and (max-width: 415px) {
+
+    header{
+        width: 100%;
+        padding: 40px 50px;
+    }
+
+    body.show > *:not(.barra){
+        filter: blur(3px);
+    }
+
+    #navbar{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #navbar.show{
+        display: flex;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    #navbar li{
+        padding: 5%;
+        padding-left: 0%;
+        text-align: center;
+    }
+
+    #navbar li a{
+        font-size: 30px;
+        
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        left: 70%;
+        top: 20%
+    }
+
+    #hamburger.show{
+        top: 3.8%
+    }
+
+    #logo {
+        height: 8vh;
+        left: 1%;
+    }
+
+    #logo.show {
+        height: 8vh;
+        left: 1%;
+        top: 1%
+    }
+
+    /* -- SECCION DE INICIO, MOBILE --*/
+
+    #bola0{
+        height: 25%;
+        width: 45%;
+        position: absolute;
+        top: 21%;
+        left: 28%;
+    }
+    
+    #bola_bot{
+        height: 25%;
+        width: 45%;
+        position: absolute;
+        top: 20%;
+        left: 28%;
+    }
+    
+    #bola_mid{
+        height: 26%;
+        width: 48%;
+        position: absolute;
+        top: 20%;
+        left: 26.5%;
+    }
+    
+    #bola_top{
+        height: 25%;
+        width: 45%;
+        position: absolute;
+        top: 20%;
+        left: 28%;
+    }
+
+    #texto_inicio{
+        visibility: hidden;
+    }
+
+    #texto_inicio_mobile{
+        visibility: visible;
+        position: absolute;
+        top: 32.6%;
+        left: -10%;
+        height: 67%;
+        width: 120%;
+    }
+
+    /* -- SECCION DE NOSOTROS, MOBILE --*/
+
+    #bola{
+        margin-top: 0vh;
+        height: 30%;
+        width: 70%;
+        top: 15%;
+        left: 20%;
+    }
+
+    #texto_sobreNosotros{
+        height: 65%;
+        width: 90%;
+        position: absolute;
+        top: 25%;
+        left: 7%;
+    }
+
+    #texto_sobreNosotros2{
+        height: 65%;
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        left: 1%;
+    }
+
+    #sushi{
+        height: 40%;
+        width: 100%;
+        top: 15%;
+        left: -150%;
+        transform: rotate(340deg);
+    }
+
+    /* -- SECCION DE MENU, MOBILE --*/
+
+    #grid-uno img{
+        height: 15%;
+        width: 35%;
+        top: 15%;
+        left: 11%
+    }
+    
+    #grid-dos img{
+        height: 15%;
+        width: 35%;
+        top: 15%;
+        left: 60%
+    }
+    
+    #grid-tres img{
+        height: 15%;
+        width: 35%;
+        top: 33%;
+        left: 11%
+    }
+    
+    #grid-cuatro img{
+        height: 15%;
+        width: 35%;
+        top: 33%;
+        left: 60%
+    }
+    
+    #grid-uno .menuAnimationSushi{
+        height: 20%;
+        width: 45%;
+        top: 7%;
+        left: 9%;
+    }
+    
+    #grid-dos .menuAnimationSushi{
+        height: 20%;
+        width: 45%;
+        top: 7%;
+        left: 50%;
+    }
+    
+    #grid-tres .menuAnimationSushi{
+        height: 20%;
+        width: 45%;
+        top: 25%;
+        left: 9%;
+    }
+    
+    #grid-cuatro .menuAnimationSushi{
+        height: 20%;
+        width: 45%;
+        top: 25%;
+        left: 52%;
+    }
+ 
+    #texto_ordena{
+        position: absolute;
+        height: 60%;
+        width: 100%;
+        top: 25%;
+        left: 1%;
+    }
+ 
+    #darwin {
+        position: absolute;
+        height: 40%;
+        width: 60%;
+        top: 50%;
+        left: 3%;
+    }
+ 
+     #uber {
+         position: absolute;
+         height: 30%;
+         width: 50%;
+         top: 55%;
+         left: 50%;
+ }
+ 
+     #didi {
+         position: absolute;
+         height: 30%;
+         width: 50%;
+         top: 70%;
+         left: 5%;
+     }
+ 
+     #rappi {
+         position: absolute;
+         height: 25%;
+         width: 40%;
+         top: 72%;
+         left: 54%;
+     }
+
+
+    /* -- SECCION DE CONTACTO, MOBILE --*/
+
+    #contacto h2{
+        font-size: 100%;
+        top: 33%;
+        left: 33.3%;
+    }
+
+    #contacto h3{
+        font-size: 100%;
+        top: 33%;
+        left: 11%;
+    }
+    #contacto p{
+        font-size: 60%;
+        top: 36%;
+        left: 6%;
+    }
+
+    #contacto #sucursales {
+        top: 28%;
+        left: 50%
+    }
+    
+    #contacto #local2{
+        font-size: 76%;
+        left: 68%
+    }
+    
+    #contacto #direccion2{
+        left: 53%;
+    }
+    
+    iframe{
+        position: absolute;
+        height: 15%;
+        width: 40%;
+        top: 71%;
+        left: 8%;
+    }
+    
+    #mapa2{
+        top: 71%;
+        left: 53%;
+    }
+    
+    .fa {
+        padding: 15px;
+        font-size: 30px;
+        width: 115px;
+        height: 115px;
+        text-align: center;
+        text-decoration: none;
+      }
+    
+    .fa:hover {
+        opacity: 0.7;
+      }
+    
+    .fa-facebook {
+        position: absolute;
+        top: 18.2%;
+        left: 16.6%;
+        height: 6%;
+        width: 10%;
+      }
+      
+     .fa-instagram {
+        position: absolute;
+        top: 18.2%;
+        left: 28.3%;
+        height: 6%;
+        width: 10%;
+      }
+    
+    #redes_sociales{
+        position: absolute;
+        height: 25%;
+        width: 45%;
+        top: 41%;
+        left: 28%
+    }
+
+    #sucursal_reliz{
+        position: absolute;
+        height: 20%;
+        width: 40%;
+        top: 53%;
+        left: 8%;
+    }
+    
+    #sucursal_josema{
+        position: absolute;
+        height: 20%;
+        width: 40%;
+        top: 53%;
+        left: 53%;
+    }
+    
+    #contacto #logo{
+        position: absolute;
+        height: 10%;
+        width: 25%;
+        top: 87%;
+        left: 38%;
+    }
+    
+    #contacto_menu{
+        visibility: hidden;
+    }
+
+    #contacto_menu_boton{
+        visibility: visible;
+        position: absolute;
+        height: 25%;
+        width: 45%;
+        top: 31.5%;
+        left: 28%;
+    }
+
+    #menu_imagen{
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        top: -3%;
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    body.show > *:not(.barra){
+        filter: blur(3px);
+    }
+
+    #logo{
+        height: 11vh;
+    }
+
+    #logo.show{
+        height: 11vh;
+    }
+
+    #bola{
+        margin-top: 0vh;
+        height: 40%;
+        width: 70%;
+        top: 15%;
+        left: 20%;
+    }
+
+    #texto_sobreNosotros{
+        top: 33%;
+        left: 7%;
+    }
+
+    #texto_sobreNosotros2{
+        top: 50%;
+        left: 1%;
+    }
+
+    #sushi{
+        height: 50%;
+        width: 100%;
+        top: 13%;
+        left: -150%;
+        transform: rotate(340deg);
+    }
+}
+

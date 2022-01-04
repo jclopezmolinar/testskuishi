@@ -2001,6 +2001,12 @@ iframe{
 /* -------------------------------------------------- */
 
 @media screen and (max-width: 415px) {
+    
+    section {
+        background: url('assets/background.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
 
     header{
         width: 100%;
@@ -2366,6 +2372,12 @@ iframe{
 }
 
 @media screen and (max-width: 360px) {
+    
+    section {
+        background: url('assets/background.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
 
     body.show > *:not(.barra){
         filter: blur(3px);

@@ -2295,7 +2295,7 @@ iframe{
          position: absolute;
          height: 30%;
          width: 50%;
-         top: 70%;
+         top: 75%;
          left: 5%;
      }
  
@@ -2303,8 +2303,9 @@ iframe{
          position: absolute;
          height: 25%;
          width: 40%;
-         top: 72%;
+         top: 76%;
          left: 54%;
+         z-index: 9999;
      }
 
 

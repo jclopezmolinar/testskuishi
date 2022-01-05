@@ -6,8 +6,6 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow:auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 body{
@@ -2086,6 +2084,7 @@ iframe{
         filter: blur(3px);
     }
 
+
     #navbar{
         display: none;
         width: 100%;
@@ -2096,7 +2095,10 @@ iframe{
         display: flex;
         padding-top: 20%;
         padding-bottom: 100%;
+    }
 
+    #html.show{
+        overflow: hidden;
     }
 
     #navbar li{
@@ -2125,7 +2127,7 @@ iframe{
     }
 
     #hamburger.show{
-        top: 3.8%
+        top: 2%
     }
 
     #logo {
@@ -2136,7 +2138,7 @@ iframe{
     #logo.show {
         height: 8vh;
         left: 1%;
-        top: 1%
+        top: 0.5%
     }
 
     /* -- SECCION DE INICIO, MOBILE --*/

@@ -1713,6 +1713,11 @@ iframe{
 
 
 @media screen and (max-width: 760px) {
+
+    #html.show{
+        overflow: hidden;
+    }
+
     header{
         width: 100%;
         padding: 30px 50px;
@@ -1723,10 +1728,21 @@ iframe{
         flex-direction: column;
     }
 
+    #navbar.show{
+        margin-top: -15%;
+    }
+
     #navbar li{
         margin-left: 75px;
         margin-bottom: 0px;
         margin-top: -5%;
+    }
+
+    #navbar.show li {
+        font-size: 30px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-left: 13%;
     }
 
     #navbar li a{
@@ -1740,8 +1756,8 @@ iframe{
     }
 
     #logo.show {
-        top: 0.7%;
-        height: 10.7%;
+        top: 0.2%;
+        height: 10.4%;
     }
 
     .hamburger{

@@ -2095,7 +2095,8 @@ iframe{
     #navbar.show{
         display: flex;
         padding-top: 20%;
-        padding-bottom: 20%;
+        padding-bottom: 100%;
+
     }
 
     #navbar li{
@@ -2107,6 +2108,12 @@ iframe{
     #navbar li a{
         font-size: 30px;
         
+    }
+
+    #navbar.show li {
+        font-size: 30px;
+        padding-top: 20%;
+        padding-bottom: 30%;
     }
 
     .hamburger{

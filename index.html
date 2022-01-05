@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
     <meta charset="UTF-8">
@@ -235,12 +235,14 @@
         const navbar = document.getElementById('navbar');
         const logo = document.getElementById('logo');
         const body = document.getElementById('body');
+        const html = document.getElementById('html');
 
         hamburger.addEventListener('click', ()=>{
             navbar.classList.toggle('show');
             logo.classList.toggle('show');
             hamburger.classList.toggle('show');
             body.classList.toggle('show');
+            html.classList.toggle('show');
 
         })
     </script>
